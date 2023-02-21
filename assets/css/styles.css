@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.div-secao-principal{
+    background-image: url('../../assets/img/secao-principal/fundo.jpg');
+    background-position: center; /* Faz com que a imagem de fundo fique melhor no responsivo e quero sempre no centro */
+    background-size: cover; /*cover = ele cobre toda aquela área definida*/
+
+    background-color: #e5e5e5;
+    min-height: 600px; /* tamanho que irá ficar na tela */
+
+    color: white;
+}
+
+.img-clea{
+    width: 100%; /* quando coloca em 100%, a imagem ganha responsividade */
+    height: 600px; /* ganha a altura de 600px */
+    max-width: 900px; /* O tamanho máximo que a img pode ter */
+    min-width: 540px; /* O mínimo que a img pode ter */
+    /* Atributo de mesclagem */
+    mix-blend-mode: lighten; /* a img vai ser mesclada com a imagem de fundo */
+}
+
+.img-wanda{
+    width: 100%;
+    height: 600px;
+    max-width: 900px;
+    min-width: 400px;
+    /* Atributo de mesclagem */
+    mix-blend-mode: lighten;
+}
+
+.div-do-meio{
+    height: 600px;
+    width: 100%;
+}
+
+.img-circulo{
+    width: 100%;
+    max-width: 600px; /* tamanho máximo que o circulo pode chegar */
+    
+    /* Atributo de mesclagem */
+    mix-blend-mode: screen; /* screen é uma mesclagem diferente onde ele não perde sua cor ou textura */
+}
+
+.img-drestranho{
+    width: 100%;
+    max-width: 700px;
+}
+
+.img-titulo{
+    width: 100%;
+    max-width: 500px;
+    
+    mix-blend-mode: screen;
+    padding: 20px;
+}
+
+
+.div-img-circulo, .div-img-drestranho, .div-img-titulo{
+    bottom: 0px; /* faz com que as imgs fiquem embaixo */
+}
+
+@media (max-width: 500px) {
+    .div-secao-principal{
+        min-height: 450px;
+    }
+}
